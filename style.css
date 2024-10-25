@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E0E6E6;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #86A392;
+    padding: 15px;
+    align-items: center;
+    border-bottom: 2px solid #666;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-right .icon {
+    margin-left: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: calc(100vh - 80px); /* Adjust height based on navbar */
+}
+
+.sidebar {
+    width: 20%; /* Increased sidebar width for better visibility */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar img {
+    width: 100px; /* Adjusted image size to match the layout in the link */
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.content {
+    width: 60%; /* Adjusted width for better space usage */
+    background-color: #F2F6F6;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.main-image img {
+    width: 250px; /* Increased image size for better visibility */
+    height: 250px;
+    margin-right: 20px;
+}
+
+.text-box {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap; /* Allow text to wrap if it exceeds container width */
+}
+
+.sidebar-right {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-right .icon {
+    width: 50px; /* Adjusted icon size */
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sidebar, .content, .sidebar-right {
+        width: 100%;
+    }
+    .main-image img {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,27 +1,55 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Responsive CSS</title>
-    <link rel="stylesheet" href="./style.css" type="text/css" media="all">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-      <div class="MainContainer">
-          <nav>
-              This is the Nav Bar
-          </nav>
-          <div class="Content">
-              <div class="Left">
-                  Left
-              </div>
-              <div class="Center">
-                  Center
-              </div>
-              <div class="Right">
-                  Right
-              </div>
-          </div>
-      </div>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 6 Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <img src="" alt="World Icon" class="icon">
+            <span>Welcome to the NavBar</span>
+        </div>
+        <div class="nav-right">
+            <span>My Account</span>
+            <img src="" alt="Account Icon" class="icon">
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-item">
+                <img src="myimages/50.jpeg" alt="Small Image 1" class="small-image">
+                <span>Small Text Here</span>
+            </div>
+            <div class="sidebar-item">
+                <img src="myimages/50.jpeg" alt="Small Image 2" class="small-image">
+                <span>Small Text Here</span>
+            </div>
+            <div class="sidebar-item">
+                <img src="myimages/50.jpeg" alt="Small Image 3" class="small-image">
+                <span>Small Text Here</span>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <div class="main-image">
+                <img src="myimages/300.jpeg" alt="Large Bear Image">
+            </div>
+            <div class="text-box">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur post Tarentum ad Archytam?...</p>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="sidebar-right">
+            <img src="myimages/50.jpeg" alt="Flask Icon" class="icon">
+            <img src="myimages/50.jpeg" alt="Snowflake Icon" class="icon">
+        </div>
+    </div>
+</body>
 </html>
